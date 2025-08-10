@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 import EquipamentosLista from "../Components/Equipamentoslista";
+import { toast } from "react-toastify";
 
 function ListaDeInstrumentosEmCards() {
   const [equipamentos, setEquipamentos] = useState([]);
@@ -11,9 +12,7 @@ function ListaDeInstrumentosEmCards() {
     .then((response) => {
       setEquipamentos(response.data);
     })
-    .catch((error) => {
-      console.error("Erro ao buscar equipamentos:", error);
-    });
+    .catch(() => toast.error("Erro ao buscar os equipamentos"));
   }, []);
  
   return (
