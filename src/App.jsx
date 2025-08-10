@@ -11,6 +11,7 @@ function App() {
       <Route path= "/listaemcards" Component={ListaDeInstrumentosEmCards}/>
       <Route path= "/listaemtabela" Component={ListaDeInstrumentosEmTabela}/>
     </Routes>  
+    <ToastContainer/>
     </>
   );
 }
