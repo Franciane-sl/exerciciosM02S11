@@ -1,6 +1,7 @@
 import { useContext } from "react";
 import EquipamentosLista from "../../Components/Equipamentoslista";
 import {EquipamentosContext} from "../../Contexts/EquipamentosContext";
+import style from "./ListaDeInstrumentosEmCards.module.css";
 
 
 
@@ -11,9 +12,9 @@ function ListaDeInstrumentosEmCards() {
   
   return (
     <>
-      <article className="cards">
+      <article className={style.cards}>
         <h2>Lista de Instrumentos</h2>
-        <section className="cards_instrumentos">
+        <section className={style.cards_instrumentos}>
           {equipamentos.map((equipamento) => (
             <EquipamentosLista
             key = {equipamento.id}
