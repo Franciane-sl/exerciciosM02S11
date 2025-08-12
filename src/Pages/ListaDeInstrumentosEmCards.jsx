@@ -1,20 +1,14 @@
-import { useEffect, useState } from "react";
-import axios from "axios";
+import { useContext } from "react";
 import EquipamentosLista from "../Components/Equipamentoslista";
-import { toast } from "react-toastify";
+import {EquipamentosContext} from "../Contexts/EquipamentosContext";
+
+
 
 function ListaDeInstrumentosEmCards() {
-  const [equipamentos, setEquipamentos] = useState([]);
 
-  useEffect(() => {
-    axios
-    .get("http://localhost:3000/equipamentos")
-    .then((response) => {
-      setEquipamentos(response.data);
-    })
-    .catch(() => toast.error("Erro ao buscar os equipamentos"));
-  }, []);
- 
+  const { equipamentos } = useContext(EquipamentosContext);
+
+  
   return (
     <>
       <article>
