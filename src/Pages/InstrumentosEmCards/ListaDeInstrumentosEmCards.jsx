@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import EquipamentosLista from "../../Components/Equipamentoslista";
+import EquipamentosLista from "../../Components/EquipamentosLista/EquipamentosLista.jsx";
 import {EquipamentosContext} from "../../Contexts/EquipamentosContext";
 import style from "./ListaDeInstrumentosEmCards.module.css";
 
