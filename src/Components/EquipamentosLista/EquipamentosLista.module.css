@@ -1,0 +1,26 @@
+.cardEquipamentos {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 16px;
+  width: 250px;
+  text-align: left;
+  margin: 16px;
+  
+}
+
+.cardEquipamentos h3 {
+  color: blue;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.statusAtivo {
+  color: green;
+  font-weight: bold;
+}
+
+.statusInativo {
+  color: red;
+  font-weight: bold;
+}
