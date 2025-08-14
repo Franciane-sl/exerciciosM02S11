@@ -1,15 +1,15 @@
-import { useContext } from "react";
 import EquipamentosLista from "../../Components/EquipamentosLista/EquipamentosLista.jsx";
-import {EquipamentosContext} from "../../Contexts/EquipamentosContext";
+import UseGetInstruments from "../../Hooks/UseGetInstruments.jsx";
 import style from "./ListaDeInstrumentosEmCards.module.css";
-
 
 
 function ListaDeInstrumentosEmCards() {
 
-  const { equipamentos } = useContext(EquipamentosContext);
+  const { equipamentos, loading, error } = UseGetInstruments();
 
-  
+  if (loading) return <p>Carregando...</p>;
+  if (error) return <p>{error}</p>;
+
   return (
     <>
       <article className={style.cards}>
