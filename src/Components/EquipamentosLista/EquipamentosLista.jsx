@@ -20,9 +20,9 @@ function EquipamentosLista ({equipamento}) {
         <span><strong>Preço:</strong> {moneyFormat(equipamento.preco)}</span>
         <p><strong>Peso:</strong> {equipamento.peso_kg} kg</p>
         <p><strong>Status:</strong>{" "}
-        <spam className={equipamento.ativo ? style.statusAtivo : style.statusInativo} >
+        <span className={equipamento.ativo ? style.statusAtivo : style.statusInativo} >
           {equipamento.ativo ? "Ativo" : "Inativo"}
-          </spam> 
+          </span> 
         </p>
       </section>
     </>
