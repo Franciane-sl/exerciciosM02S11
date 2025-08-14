@@ -1,11 +1,13 @@
-import { useContext } from "react";
 import EquipamentosTabela from "../../Components/EquipamentosTabela/EquipamentosTabela.jsx";
-import {EquipamentosContext} from "../../Contexts/EquipamentosContext";
+import UseGetInstruments from "../../Hooks/UseGetInstruments.jsx";
 import style from "./ListaDeInstrumentosEmTabela.module.css";
 
 function ListaDeInstrumentosEmTabela() {
 
-  const { equipamentos } = useContext(EquipamentosContext);
+  const { equipamentos, loading, error } = UseGetInstruments();
+  
+    if (loading) return <p>Carregando...</p>;
+    if (error) return <p>{error}</p>;
  
   return (
     <>
