@@ -1,7 +1,7 @@
 import {Route, Routes} from 'react-router-dom';
 import './App.css'
 import ListaDeInstrumentosEmCards from './Pages/InstrumentosEmCards/ListaDeInstrumentosEmCards';
-import ListaDeInstrumentosEmTabela from './Pages/ListaDeInstrumentosEmTabela';
+import ListaDeInstrumentosEmTabela from './Pages/InstrumentosEmTabela/ListaDeInstrumentosEmTabela';
 import { ToastContainer } from "react-toastify";
 
 function App() {
