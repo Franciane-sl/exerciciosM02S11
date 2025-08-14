@@ -1,0 +1,15 @@
+.tabelaLinha td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+  text-align: left;
+  font-size: 14px;
+  border: 1px solid #94b6f5;
+}
+
+.tabelaLinha td:first-child {
+  font-weight: bold;
+}
+
+.tabelaLinha:hover {
+  background-color:#94b6f5;;
+}
